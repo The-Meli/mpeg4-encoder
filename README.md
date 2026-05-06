@@ -112,19 +112,6 @@ python src/encoder.py visualise frames/ figures/ --qf 50 --gop 5
 | `--start` | Starting frame index | `0` |
 
 ---
-
-## Results
-
-| QF | GOP | Compression Ratio | PSNR I (dB) | PSNR P (dB) |
-|----|-----|-------------------|-------------|-------------|
-| 10 | 5   | ~42×              | ~28         | ~26         |
-| 50 | 5   | ~10×              | ~38         | ~36         |
-| 80 | 5   | ~4×               | ~43         | ~41         |
-| 50 | 10  | ~14×              | ~38         | ~36         |
-| 50 | 20  | ~18×              | ~38         | ~36         |
-
----
-
 ## Key Design Choices
 
 - **YCbCr + 4:2:0** — separates luma from chroma; human vision is less sensitive to chroma detail
