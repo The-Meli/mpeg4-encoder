@@ -86,7 +86,7 @@ python src/extract_frames.py video.mp4 --n 30 --out frames/
 
 ### Step 2 — Encode
 ```bash
-python src/encoder.py encode frames/ output/output.bin --qf 50 --gop 5 --sw 8
+python src/encoder.py encode frames/ output/output.bin 
 ```
 
 ### Step 3 — Decode
@@ -96,7 +96,7 @@ python src/encoder.py decode output/output.bin output_frames/
 
 ### Step 4 — Visualise the full pipeline
 ```bash
-python src/encoder.py visualise frames/ figures/ --qf 50 --gop 5
+python src/encoder.py visualise frames/ figures/ 
 ```
 
 ---
